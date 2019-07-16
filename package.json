@@ -2,14 +2,18 @@
   "name": "myapp",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://github.com/domanhtuan06869/labnodejs",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
+    "gh-pages": "^2.0.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
   }
